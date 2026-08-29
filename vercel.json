@@ -4,7 +4,11 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "https://us.i.posthog.com/static/$1"
+      "dest": "https://us-assets.i.posthog.com/static/$1"
+    },
+    {
+      "src": "/array/(.*)",
+      "dest": "https://us-assets.i.posthog.com/array/$1"
     },
     {
       "src": "/(.*)",
