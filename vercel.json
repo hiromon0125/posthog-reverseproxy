@@ -3,16 +3,16 @@
   "version": 2,
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "https://us-assets.i.posthog.com/static/$1"
+      "src": "/static/:path(.*)",
+      "dest": "https://us-assets.i.posthog.com/static/:path"
     },
     {
-      "src": "/array/(.*)",
-      "dest": "https://us-assets.i.posthog.com/array/$1"
+      "src": "/array/:path(.*)",
+      "dest": "https://us-assets.i.posthog.com/array/:path"
     },
     {
-      "src": "/(.*)",
-      "dest": "https://us.i.posthog.com/$1"
+      "src": "/:path(.*)",
+      "dest": "https://us.i.posthog.com/:path"
     }
   ]
 }
